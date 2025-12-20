@@ -1,0 +1,86 @@
+/* KES Shutdown Screen Styles */
+
+.shutdown-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #24242e;
+  color: #44b1ff;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.shutdown-content {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.shutdown-line {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.shutdown-copyright {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #666666;
+  font-size: 16px;
+}
+
+.shutdown-designer {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  color: #44b1ff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.kai-final-comment {
+  margin-top: 30px;
+  color: #44b1ff;
+  font-style: italic;
+  font-size: 16px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.system-off-indicator {
+  position: absolute;
+  bottom: 50px;
+  color: #666666;
+  font-size: 14px;
+  letter-spacing: 2px;
+  animation: fade-in 2s ease-in;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Retro CRT effect */
+.shutdown-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    transparent 50%,
+    rgba(255, 68, 68, 0.03) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}

@@ -1,0 +1,126 @@
+/* Shared KAI Component Styles - In-Game Version */
+
+/* Root container - fixed bottom-right positioning for in-game */
+.kai-root {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 500;
+}
+
+/* Anchor for bubble + avatar */
+.kai-anchor {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Avatar block */
+.kai-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Idle animation - subtle floating */
+@keyframes kaiIdle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.kai-sprite {
+  width: 160px;
+  height: 220px;
+  image-rendering: pixelated;
+  animation: kaiIdle 2.6s steps(1) infinite;
+}
+
+.kai-placeholder {
+  width: 160px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  background: #c0c0c0;
+  border: 2px solid #000;
+}
+
+/* Nameplate - white text, no background */
+.kai-name {
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 1px 4px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Speech bubble - appears with animation */
+@keyframes bubbleAppear {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.kai-speech {
+  position: absolute;
+  right: 180px;
+  bottom: 120px;
+
+  min-width: 220px;
+  max-width: 300px;
+
+  padding: 12px 16px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 14px;
+
+  box-shadow:
+    3px 3px 0 #000,
+    6px 6px 0 #808080;
+
+  animation: bubbleAppear 0.4s ease-out;
+}
+
+/* Bubble content */
+.kai-speech-content {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  color: #000;
+  font-family: 'Courier New', monospace;
+}
+
+/* Tail pointing to avatar */
+.kai-speech-tail {
+  position: absolute;
+  right: -10px;
+  bottom: 28px;
+
+  width: 12px;
+  height: 12px;
+
+  background: #fff;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
+  transform: rotate(45deg);
+}
+
+/* Cursor blink animation */
+@keyframes cursorBlink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.kai-cursor {
+  margin-left: 2px;
+  animation: cursorBlink 1s steps(1) infinite;
+}
