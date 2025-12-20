@@ -45,6 +45,6 @@ VITE_AI_MEMORY_ENDPOINT=https://<your-api-gateway-url>/memory
 ```
 ## Disclaimer
 
-This system is intentionally opinionated.
-The AI will judge you.
-That’s the point.
+-This system is intentionally opinionated.
+-The AI will judge you.
+-That’s the point.
