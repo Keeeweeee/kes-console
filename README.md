@@ -40,9 +40,9 @@ npm run dev
 ## Optional AWS integration:
 
 Create .env:
-
+```bash
 VITE_AI_MEMORY_ENDPOINT=https://<your-api-gateway-url>/memory
-
+```
 ## Disclaimer
 
 This system is intentionally opinionated.
