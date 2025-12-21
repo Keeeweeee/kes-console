@@ -13,6 +13,14 @@ Inspired by classic NES systems, reimagined as **KES (Kai Entertainment System)*
 - ⚡ Boot screen & power-off sequence
 - 😈 Sassy AI commentary based on player behavior
 
+## 🎥 Demo Video
+
+The full gameplay + AI commentary demo is included in this repository.
+
+➡️ Download: `demo/kes-demo.mp4`
+
+(Preview may not render in GitHub UI due to file size.)
+
 ## Tech Stack
 
 - React + TypeScript + Vite
