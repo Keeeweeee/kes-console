@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
 
-  "homepage": "https://keeeweeee.github.io/kes-console",
+  "homepage": "https://keeeweeee.github.io/kes-console/",
 
   "scripts": {
     "dev": "vite",

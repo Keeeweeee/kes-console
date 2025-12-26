@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { ConsoleAIProvider } from './ai/console/ConsoleAIContext'
 import { ConsoleSystemProvider, useConsoleSystem, ConsoleSystemState } from './console/ConsoleSystemContext'
 import ConsoleDashboard from './console/ConsoleDashboard'
