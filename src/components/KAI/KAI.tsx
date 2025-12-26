@@ -29,7 +29,7 @@ const KAI: React.FC<KAIProps> = ({
 
         <div className="kai-avatar">
           <img
-            src="/avatars/kai.png"
+            src="avatars/kai.png"
             alt="KAI"
             className="kai-sprite"
             draggable={false}

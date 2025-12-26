@@ -4,17 +4,17 @@ export type MusicType = 'dashboard' | 'game';
 export type SFXType = 'gameOver' | 'youWin';
 
 const MUSIC_MAP: Record<MusicType, string> = {
-  dashboard: '/music/dashboard.mp3',
-  game: '/music/game.mp3',
+  dashboard: 'music/dashboard.mp3',
+  game: 'music/game.mp3',
 };
 const GAMEOVER_SFX_MAP: Record<string, string> = {
-  snake: '/music/game-over.mp3',
-  pacman: '/music/pac-man.mp3',
-  'block-breaker': '/music/game-over.mp3',
-  minesweeper: '/music/explosion.mp3',
+  snake: 'music/game-over.mp3',
+  pacman: 'music/pac-man.mp3',
+  'block-breaker': 'music/game-over.mp3',
+  minesweeper: 'music/explosion.mp3',
 };
 
-const YOU_WIN_SFX_PATH = '/music/you-win.mp3';
+const YOU_WIN_SFX_PATH = 'music/you-win.mp3';
 
 class AudioManager {
   private static instance: AudioManager;

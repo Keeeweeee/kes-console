@@ -76,7 +76,7 @@ const ConsoleDashboard = () => {
       name: 'Snake', 
       subtitle: 'Goal: Score 500 (Impossible)',
       description: 'The rules are familiar.\nThe board is not.\nSomething is learning how you move — and it gets bored easily.\nGoal: Reach a score of 500. Impossible? Possibly',
-      bannerImage: '/banners/snake.png', // Placeholder - replace with uploaded image
+      bannerImage: 'banners/snake.png', // Placeholder - replace with uploaded image
       playerCount: 1
     },
     { 
@@ -84,7 +84,7 @@ const ConsoleDashboard = () => {
       name: 'Minesweeper', 
       subtitle: 'Find the mines\nTrust no one',
       description: 'The numbers never lie.\nBut they don’t tell the whole truth either.\nTread carefully...',
-      bannerImage: '/banners/minesweeper.png', // Placeholder - replace with uploaded image
+      bannerImage: 'banners/minesweeper.png', // Placeholder - replace with uploaded image
       playerCount: 1
     },
     { 
@@ -92,7 +92,7 @@ const ConsoleDashboard = () => {
       name: 'Pac-Man', 
       subtitle: 'But with a twist',
       description: 'You’ve memorized the maze.\nThey’ve memorized you.\nRunning won’t feel the same this time.',
-      bannerImage: '/banners/pacman.png', // Placeholder - replace with uploaded image
+      bannerImage: 'banners/pacman.png', // Placeholder - replace with uploaded image
       playerCount: 1
     },
     { 
@@ -100,7 +100,7 @@ const ConsoleDashboard = () => {
       name: 'Block Breaker', 
       subtitle: 'Chaotic version',
       description: 'Break the pattern.\nThe pattern breaks back.\nNot all blocks are meant to disappear.',
-      bannerImage: '/banners/block-breaker.png', // Placeholder - replace with uploaded image
+      bannerImage: 'banners/block-breaker.png', // Placeholder - replace with uploaded image
       playerCount: 1
     }
   ]
@@ -392,7 +392,7 @@ const ConsoleDashboard = () => {
           <div className="kai-avatar">
             <div className="kai-sprite">
               <img
-                src="/avatars/kai.png"
+                src="avatars/kai.png"
                 alt="KAI"
                 className="kai-img"
                 onError={(e) => {
